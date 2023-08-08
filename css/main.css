@@ -56,12 +56,20 @@ button{
     border-radius: 50px;
 }
 
+.bt-book{
+    margin-left: 145px;
+}
+
+.bt-now{
+    margin-left: 185px;
+}
+
 /* IMAGES --------------------------------------------------------------------------------------*/
 
 .col-box{
     width: 370px;
     height: 370px;
-    flex-shrink: 0;
+    margin-left: 20px;
     margin-bottom:15px;
     border-radius: 50px;
     background-image: url("../assets/rick-jamison-9CJTrF-HnlU-unsplash.jpg");
@@ -71,7 +79,7 @@ button{
 .col-box2{
     width: 370px;
     height: 370px;
-    flex-shrink: 0;
+    margin-left: 20px;
     margin-bottom:15px;
     border-radius: 50px;
     background-image: url("../assets/sandra-seitamaa-COsskg4ilTQ-unsplash.jpg");
@@ -81,7 +89,7 @@ button{
 .col-box3{
     width: 370px;
     height: 370px;
-    flex-shrink: 0;
+    margin-left: 20px;
     margin-bottom:15px;
     border-radius: 50px;
     background-image: url("../assets/luke-mckeown-nlyWZtWTzCo-unsplash.jpg");
@@ -153,9 +161,4 @@ button{
 .card-body{
     background-color:#B4C2C5;
     height: 100%;
-    padding-top: 50px;
-}
-
-.card-body h1,p{
-    color: white;
 }
