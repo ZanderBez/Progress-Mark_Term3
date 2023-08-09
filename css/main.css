@@ -31,6 +31,41 @@ p,a{
 
 
 /* Nab-Bar --------------------------------------------------------------------------------------*/
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.navbar-brand img {
+    max-height: 180px; 
+    width: auto; 
+    margin-top: -20px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-item {
+    margin-top: -75px;
+}
+
+
 .nav-link{
     color:rgba(255, 255, 255, 0.6) ;
 }
