@@ -44,11 +44,24 @@
       
 
         <!-- Trips -->
-        <br>
-        <br>
-        <div class="container-fluid">
-          <h1>TRIPS</h1>
+        <div class="container mt-5 pt-2">
+            <h1>TRIPS</h1>
+            <div class="row" style="padding-bottom: 20px;">
+                <!-- Radio Low to High -->
+                <div class="btn-group col-auto" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="sortRadio" id="lowSort" value="low to high" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="lowSort"><i class="bi bi-sort-down-alt"></i>Price: Low To High</label>
+
+                    <input type="radio" class="btn-check" name="sortRadio" id="highSort" value="high to low" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="highSort"><i class="bi bi-sort-up-alt"></i>Price: High To low</label>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid" id="cruiseContainer">
+        </div>
           <br>
+          <template id="cruiseTemplate">
           <div class="card mb-3" style="max-width: 85%; max-height: fit-content; margin: auto;">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -73,55 +86,7 @@
                 </div>
             </div>
           </div>
-          <div class="card mb-3" style="max-width: 85%; margin: auto;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                  <img src="./assets/joris-beugels-_t7m6gV_f4Q-unsplash.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                  <div class="card-body">
-                      <div class="row">
-                          <div class="col-md-6" style="color: white;">
-                              <h1 class="card-title" id="nameText">ALASKA</h1>
-                              <p class="card-text" id="descriptionText">There's no place like Alaska, one of the most breathtaking states in the U.S. Visiting Alaska may make you feel like you're visiting another country or maybe even another world. An Alaska cruise can take you through the Inside Passage, near the incredible Hubbard Glacier, or into Glacier Bay National Park. Alaska cruise packages can also include a tour or excursion on shore to the unique and beautiful Denali National Park.</p>
-                              <h2 class="card-text" id="priceText">$196</h2>
-                              <button class="bt-now">BOOK NOW</button>
-                          </div>
-                          <div class="col-md-6" style="padding-top: 50px;color: white;">
-                              <h3 class="card-title" id="dateText">3 NIGHTS</h3>
-                              <p class="card-text" id="departText">DEPART FROM VANCOUVER, CANADA 9AM</p>
-                              <p class="card-text" id="destinationText">DESTINATION: KETCHIKAN, ALASKA 7AM</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-        <div class="card mb-3" style="max-width: 85%; margin: auto;">
-          <div class="row g-0">
-            <div class="col-md-4">
-                <img src="./assets/rick-jamison-9CJTrF-HnlU-unsplash.jpg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-6" style="color: white;">
-                            <h1 class="card-title" id="nameText">CARIBBEAN</h1>
-                            <p class="card-text" id="descriptionText">A Caribbean cruise is one of the most popular and inexpensive ways to tour and explore this region, and with CruiseMate, you can visit a huge selection of Caribbean cruise destinations with itineraries on many different ships and cruise lines, including discount Caribbean cruises from Princess, Holland America, Norwegian, Carnival, Royal Caribbean, and more.</p>
-                            <h2 class="card-text" id="priceText">$189</h2>
-                            <button class="bt-now">BOOK NOW</button>
-                        </div>
-                        <div class="col-md-6" style="padding-top: 50px;color: white;">
-                            <h3 class="card-title" id="dateText">3 NIGHTS</h3>
-                            <p class="card-text" id="departText">DEPART FROM MIAMI AT 9AM</p>
-                            <p class="card-text" id="destinationText">DESTINATION: PUERTO PLATA, DOMINICAN REPUBLIC 7AM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-      </div>
+    </template>
       
       
       <!-- javascript -->
