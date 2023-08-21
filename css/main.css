@@ -31,11 +31,11 @@ p,a{
 }
 
 .weather-text{
-    padding: 50px
+    padding: 40px
 }
 
 .city-text{
-    padding: 20px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -222,15 +222,30 @@ button{
     background-color: #1D2532;
     height: fit-content;
     color: white;
+    border-radius: 5px;
+    margin-bottom: 25px;
 }
 
 /* Accordion */
+
+.accordion-Text{
+    color: white;
+    padding: 50px;
+}
 .accordion-item{
     background-color: #1D2532;
     color: white;
 }
 
 .accordion-button{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color: #9b7e40;
 }
+
+.accordion-bg {
+    background-image: url("../assets/samsommer-J3ABLQjZQBg-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
