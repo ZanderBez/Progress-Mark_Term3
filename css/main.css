@@ -219,6 +219,18 @@ button{
 /* Weather App */
 .col-box1{
     width: 100%;
-    background-color: #9b7e40;
+    background-color: #1D2532;
     height: fit-content;
+    color: white;
+}
+
+/* Accordion */
+.accordion-item{
+    background-color: #1D2532;
+    color: white;
+}
+
+.accordion-button{
+    color: rgb(0, 0, 0);
+    background-color: #9b7e40;
 }
