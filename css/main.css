@@ -108,6 +108,62 @@ p,a,th,td{
 }
 
 /* Buttons --------------------------------------------------------------------------------------*/
+
+.btn-remove{
+    padding: 10px 20px;
+    float: left;
+    background: #9b7e40;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+
+.btn-remove:hover{
+    padding: 10px 20px;
+    float: left;
+    background: rgb(161, 17, 17);
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+
+.btn-purchase{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    float: right;
+    padding-top: 8px;
+    border-radius: 8px;
+    background: #B4C2C5;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.btn-purchase:hover{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    float: right;
+    padding-top: 8px;
+    border-radius: 8px;
+    background: #1D2532;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
 .mt-4{
     border: none;
     padding: 16px 20px;
@@ -154,22 +210,30 @@ p,a,th,td{
     margin-left: 145px;
 }
 
-.btn-now{
+.btn-now {
     margin: auto;
     color: white;
     width: 120px;
     height: 45px;
     text-align: center;
+    opacity: 0; 
     padding-top: 9px;
     border-radius: 50px;
     border-color: #9b7e40;
     background-color: #9b7e40;
+    transition: opacity 0.3s ease;
+}
+
+.card-body:hover .btn-now {
+    opacity: 1;
+    cursor: pointer;
 }
 .btn-now:hover{
     cursor: pointer;
     margin: auto;
     width: 120px;
     height: 45px;
+    display: block;
     text-align: center;
     padding-top: 9px;
     border-radius: 50px;
@@ -184,6 +248,79 @@ p,a,th,td{
     color: white;
 }
 
+/* model */
+
+.btn-model{
+    padding: 10px 20px;
+    float: right;
+    background: #9b7e40;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.btn-model:hover{
+    padding: 10px 20px;
+    float: right;
+    background: #1D2532;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 60%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #1D2532 ;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
 
 /* Table --------------------------------------------------------------------------------------*/
 
@@ -259,6 +396,12 @@ p,a,th,td{
 
 .hero-image2{
     height: 83vh;
+    width: 100%;
+    background-position: center;
+}
+
+.hero-image3{
+    height: 80vh;
     width: 100%;
     background-position: center;
 }
@@ -427,7 +570,7 @@ footer{
 .logo-footer img {
     max-height: 180px; 
     width: auto; 
-    margin-top: -35px;
+    margin-top: -15px;
 }
   
 .quick-menu {
