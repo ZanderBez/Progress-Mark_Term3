@@ -6,7 +6,7 @@ const arrCruise = [
         image : "luke-mckeown-nlyWZtWTzCo-unsplash.jpg",
         date : "8 NIGHTS",
         depart : "DEPART FROM Vancouver, Canada 9 am",
-        destination : ["DESTINATION Honolulu, Hawaii 7 am and Mexico"],
+        destination : ["DESTINATION Honolulu, Hawaii 7 am"],
         singleDestination : "Single Destination: Yes",
         multiDestination : "Multi Destination: No",
         roundTrip :"Round Trip : Yes",
@@ -165,9 +165,23 @@ function loadCruise(cruiseCard) {
         currentChild.find("#singleDestination").text(cruise.singleDestination);
         currentChild.find("#multiDestination").text(cruise.multiDestination);
         currentChild.find("#roundTrip").text(cruise.roundTrip);
+
+        currentChild.find(".btn-now").click(function() {
+          const selectedCruise = cruiseCard[i];
+          bookCruise(selectedCruise);
+      });
     }
     
 }
+
+function bookCruise(selectedCruise) {
+  let selectedCruises = JSON.parse(localStorage.getItem('selectedCruises')) || [];
+
+  selectedCruises.push(selectedCruise);
+
+  localStorage.setItem('selectedCruises', JSON.stringify(selectedCruises));
+}
+
 
 $(document).ready(function(){
     $("#welcomeText").text("Welcome Zander");
