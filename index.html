@@ -43,7 +43,7 @@
                         <img src="./assets/christian-lambert-cu_RZWQKKOc-unsplash.jpg" class="hero-slide">
                         <div class="image-overlay"></div>
                         <div class="hero-text">
-                            <h1>GATEWAY TO UNFORGETTABLE CRUISES</h1>
+                            <h1 id="welcomeText">GATEWAY TO UNFORGETTABLE CRUISES</h1>
                             <p>Unlock a world of breathtaking adventures - Book your perfect cruise and set sail for unforgettable memories with Cruisemate, your ultimate cruise booking destination!</p>
                             <button class="mt-4" href="./trips.html">BOOK NOW</button>
                         </div>
@@ -66,26 +66,26 @@
               <!-- Slide 3 -->
               <div class="carousel-item">
                 <div class="hero-image-container">
-                    <img src="./assets/joris-beugels-_t7m6gV_f4Q-unsplash.jpg" class="hero-slide2">
+                    <img src="./assets/fernando-jorge-Q2B08QyXKC4-unsplash.jpg" class="hero-slide2">
                     <div class="image-overlay"></div>
                     <div class="hero-text">
                         <h1>CONTACT US</h1>
-                        <p>Discover the Majestic Beauty of Alaska on Our Unforgettable Cruise Adventure!</p>
-                        <button class="mt-4" href="./trips.html" style="margin-right: 100px;">+27 98 678 483</button>
-                        <button class="mt-4" href="./trips.html" style="margin-left: 100px;">Info@cruisemate.co.za</button>
+                        <p>For inquiries or assistance with booking your dream cruise, please contact us</p>
+                        <button class="mt-4" href="./trips.html" style="margin-right: 100px;"><i class="bi bi-telephone"></i>+27 98 678 483</button>
+                        <button class="mt-4" href="./trips.html" style="margin-left: 100px;"><i class="bi bi-envelope"></i> Info@cruisemate.co.za</button>
                     </div>
                 </div>     
           </div>
                  
         <!-- Carousel arrows ---------------------------------------------------------------------------------------->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <div class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        </div>
+        <div class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </div>
         </div>
     </div>
 
@@ -128,8 +128,12 @@
       <div class="row">
         <div class="col-6">
           <div class="col-box1">
-            <div class="city-text"><h2>Mexico</h2></div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="250" fill="currentColor" class="bi bi-cloud-sun-fill" viewBox="0 0 16 16" style="padding-left: 400px;">
+            <div class="city-text" id="city1">
+              <h2>Mexico</h2>
+              <button class="arrow-button" id="prevCity">←</button>
+              <button class="arrow-button" id="nextCity">→</button>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="250" fill="currentColor" class="bi bi-cloud-sun-fill" viewBox="0 0 16 16" style="padding-left: 410px;">
               <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
               <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
             </svg>
@@ -138,11 +142,13 @@
         </div>
         <div class="col-6">
           <div class="col-box1">
-            <h2>November</h2>
+            <h2 id="currentMonth"></h2>
+            <div id="calendar" class="calendar"></div>
           </div>
         </div>
       </div>
     </div>
+    
 
   <div class="accordion accordion-bg" id="accordionExample">
     <div class="container" style="padding: 35px;">
@@ -152,9 +158,9 @@
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               <h5>Booking Process</h5>
-            </button>
+            </div>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
@@ -164,9 +170,9 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               <h5>Cancellation and Refund Policies</h5>
-            </button>
+            </div>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
@@ -177,9 +183,9 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               <h5>Travel Documentation</h5>
-            </button>
+            </div>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">

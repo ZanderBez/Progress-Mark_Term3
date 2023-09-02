@@ -47,15 +47,43 @@
         <div class="container mt-5 pt-2">
             <h1>TRIPS</h1>
             <div class="row" style="padding-bottom: 20px;">
-                <!-- Radio Low to High -->
-                <div class="btn-group col-auto" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="sortRadio" id="lowSort" value="low to high" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="lowSort"><i class="bi bi-sort-down-alt"></i>Price: Low To High</label>
+              <!-- All Destinations -->
+                <div class="btn-group col-auto" role="group" aria-label="Basic checkbox toggle button group">
+                  <input type="checkbox" class="btn-check" name="allRadio" id="allDestinations" value="all" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="allDestinations"><i class="bi bi-calendar"></i> All Destinations</label>
+                </div>
 
-                    <input type="radio" class="btn-check" name="sortRadio" id="highSort" value="high to low" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="highSort"><i class="bi bi-sort-up-alt"></i>Price: High To low</label>
-                  </div>
+                <!-- Row Boat Special -->
+                <div class="btn-group col-auto" role="group" aria-label="Basic checkbox toggle button group">
+                  <input type="checkbox" class="btn-check" name="sortCheckbox" id="rowBoatSpecial" value="low to high" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="rowBoatSpecial"><i class="bi bi-check"></i>Row Boat Special</label>
+                </div>
+
+                <!-- Round Trips -->
+                <div class="btn-group col-auto" role="group" aria-label="Basic checkbox toggle button group">
+                  <input type="checkbox" class="btn-check" name="roundCheckbox" id="roundSort" value="Round Trips" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="roundSort"><i class="bi bi-check"></i>Round Trips</label>
+              </div>
+
+                <!-- Trips Durations -->
+                <div class="btn-group col-auto" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="durationRadio" id="shortDuration" value="short" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="shortDuration"><i class="bi bi-sort-down-alt"></i>Short Duration Trips</label>
+              
+                  <input type="radio" class="btn-check" name="durationRadio" id="longDuration" value="long" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="longDuration"><i class="bi bi-sort-up-alt"></i>Long Duration Trips</label>
+              </div>
+              
+              
+              <!-- Destination -->
+              <div class="btn-group col-auto" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="destinationRadio" id="singleSort" value="single Destination" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="singleSort"><i class="bi bi-sort-down-alt"></i>Single Destination</label>
+
+                <input type="radio" class="btn-check" name="destinationRadio" id="multiSort" value="Multi Destination" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="multiSort"><i class="bi bi-sort-up-alt"></i>Multi Destinations</label>
             </div>
+          </div>
         </div>
         
         <div class="container-fluid" id="cruiseContainer">
@@ -74,12 +102,15 @@
                                 <h1 class="card-title" id="nameText">HAWAII</h1>
                                 <p class="card-text" id="descriptionText">Hawaii is a beautiful series of volcanic U.S. islands in the Pacific Ocean. It could be an expensive getaway, but if you experience the wonders of the islands on Hawaiian island cruises, you'll save a ton of money without sacrificing the experience, as your food, lodging, and inter-island transportation are included in one low price with Hawaii cruise deals.</p>
                                 <h2 class="card-text" id="priceText">$626</h2>
-                                <button class="bt-now">BOOK NOW</button>
+                                <div class="bt-now">BOOK NOW</div>
                             </div>
                             <div class="col-md-6" style="padding-top: 50px;color: white;">
                                 <h3 class="card-title" id="dateText">8 NIGHTS</h3>
                                 <p class="card-text" id="departText">DEPART FROM VANCOUVER, CANADA 9AM</p>
-                                <p class="card-text" id="destinationText">DESTINATION: HONOLULU, HAWAII 7AM</p>
+                                <p class="card-text" id="destinationText">DESTINATION: HONOLULU, HAWAII 7AM and Mexico</p>
+                                <p class="card-text" id="singleDestination">Single Destination Yes</p>
+                                <p class="card-text" id="multiDestination">Multi Destination Yes</p>
+                                <p class="card-text" id="roundTrip">Round Trip: Yes</p>
                             </div>
                         </div>
                     </div>
