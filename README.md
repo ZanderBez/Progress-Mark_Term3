@@ -17,6 +17,7 @@ This is a demo project which aims to showcase more advanced javascript and jQuer
 * [Authors](#authors)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
+* [Vlog](#vlog)
 
 ## About The Project
 
@@ -24,15 +25,15 @@ CruiseMate is your go-to website for booking several cruises, with a user-friend
 
 ### Home
 
-![CruisMateLogo](/assets/readme/readme_homepage.png)
+![CruisMateLogo](/assets/HomePage.png)
 
 ### Browse Trips
 
-![CruisMateLogo](/assets/readme/readme_browsepage.png)
+![CruisMateLogo](/assets/TripsPage.png)
 
 ### Browse Checkout
 
-![CruisMateLogo](/assets/readme/readme_browsepage.png)
+![CruisMateLogo](/assets/CheckOutPage-3.png)
 
 ## Getting Started
 
@@ -67,7 +68,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Authors
 
-* **Zander Bezuidenhout** - *Javascript, HTML & Open Weather API* - [ZanderBezuidenhout](https://github.com/ZanderBez)
+* **Zander Bezuidenhout** - *Javascript, HTML ,CSS & Open Weather API* - [ZanderBezuidenhout](https://github.com/ZanderBez)
 
 
 
@@ -80,3 +81,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * All photos uses in this project was found on [Unsplash](https://unsplash.com/).
 * Thanks to my lecture [PaulLoots](https://github.com/PaulLoots) for using the the class exercise https://github.com/paulowi/DV100-T3-Class-Project-Test to help build this project and for [CarloOpenWindow](https://github.com/CarloOpenWindow) for helping with the Open Weather API.
 * etc
+
+## Vlog
+https://drive.google.com/file/d/11GszTUMtjlS6Uz88MwabmC4oXAlazWs0/view?usp=sharing
