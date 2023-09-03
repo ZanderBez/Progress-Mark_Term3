@@ -80,7 +80,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * All photos uses in this project was found on [Unsplash](https://unsplash.com/).
 * Thanks to my lecture [PaulLoots](https://github.com/PaulLoots) for using the the class exercise https://github.com/paulowi/DV100-T3-Class-Project-Test to help build this project and for [CarloOpenWindow](https://github.com/CarloOpenWindow) for helping with the Open Weather API.
-* etc
 
 ## Vlog
 https://drive.google.com/file/d/11GszTUMtjlS6Uz88MwabmC4oXAlazWs0/view?usp=sharing
