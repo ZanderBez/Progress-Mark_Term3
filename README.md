@@ -42,7 +42,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repo
 ```sh
-git clone https://github.com/paulowi/DV100-T3-Class-Project-Test
+git clone https://github.com/ZanderBez/Progress-Mark_Term3
 ```
 2. Open the project
 
@@ -67,17 +67,16 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Authors
 
-* **Paul Loots** - *Javascript & HTML* - [PaulLoots](https://github.com/PaulLoots)
-* **Carlo Kuyper** - *Open Weather API* - [CarloOpenWindow](https://github.com/CarloOpenWindow)
+* **Zander Bezuidenhout** - *Javascript, HTML & Open Weather API* - [ZanderBezuidenhout](https://github.com/ZanderBez)
 
-See also the list of [contributors](https://github.com/paulowi/DV100-T3-Class-Project-Test/graphs/contributors) who participated in this project.
+
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgements
 
-* Hat tip to anyone whose code was used
-* Inspiration
+* All photos uses in this project was found on [Unsplash](https://unsplash.com/).
+* Thanks to my lecture [PaulLoots](https://github.com/PaulLoots) for using the the class exercise https://github.com/paulowi/DV100-T3-Class-Project-Test to help build this project and for [CarloOpenWindow](https://github.com/CarloOpenWindow) for helping with the Open Weather API.
 * etc
