@@ -225,8 +225,9 @@ $(document).ready(function(){
     filterSortCruise();
 });
 
+
 const apiKey = 'c27ccbfda2b5d0748a8b4eb974479ec1';
-const cities = ['Mexico', 'Hawaii', 'Bermuda', 'Santo Domingo'];
+const cities = ['Mexico', 'Hawaii', 'Bermuda', 'Santo Domingo','Porto Santo','Marseille','Bahamas'];
 let currentCityIndex = 0;
 
     // fetch weather data

@@ -37,7 +37,7 @@
         <div class="image-overlay"></div>
         <div class="hero-text">
             <h1>CheckOut Page</h1>
-            <p>Welcome to the trips page, where you can explore and choose from a variety of exciting cruise options</p>
+            <p>Welcome to our secure checkout page, where you can finalize your cruise booking with ease.</p>
         </div>
     </div>  
 
@@ -49,6 +49,7 @@
                 <table id="cruise-details-table" class="table table-striped">
                     <thead>
                         <tr>
+                            <th>Quantity</th>
                             <th>Name</th>
                             <th>Total Days</th>
                             <th>Price</th>
@@ -58,9 +59,10 @@
                     <tbody id="cruise-details-body">
                     </tbody>
                 </table>
-                <div class="btn-remove" id="remove-all-button">Remove All</div>
+                <div class="total-order"><h2>Total Order:$</h2></div>
+                <div class="btn-remove" id="remove-all-button"><i class="bi bi-trash3-fill"></i> Remove All</div>
                 <div class="model-sheet">
-                  <button type="submit" class="btn-model" onclick="openPopup()">Purchase</button>
+                  <button type="submit" class="btn-model" onclick="openPopup()"><i class="bi bi-credit-card-2-back"></i> Purchase</button>
                   <div class="popup" id="popup">
                     <img src="./assets/404-tick.png">
                     <h2>Thank You!</h2>

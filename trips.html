@@ -56,13 +56,13 @@
                 <!-- Row Boat Special -->
                 <div class="btn-group col-auto" role="group" aria-label="Basic checkbox toggle button group">
                   <input type="checkbox" class="btn-check" name="sortCheckbox" id="rowBoatSpecial" value="low to high" autocomplete="off">
-                  <label class="btn btn-outline-secondary" for="rowBoatSpecial"><i class="bi bi-check"></i>Row Boat Special</label>
+                  <label class="btn btn-outline-secondary" for="rowBoatSpecial"><i class="bi bi-tag"></i>Row Boat Special</label>
                 </div>
 
                 <!-- Round Trips -->
                 <div class="btn-group col-auto" role="group" aria-label="Basic checkbox toggle button group">
                   <input type="checkbox" class="btn-check" name="roundCheckbox" id="roundSort" value="Round Trips" autocomplete="off">
-                  <label class="btn btn-outline-secondary" for="roundSort"><i class="bi bi-check"></i>Round Trips</label>
+                  <label class="btn btn-outline-secondary" for="roundSort"><i class="bi bi-arrow-clockwise"></i>Round Trips</label>
               </div>
 
                 <!-- Trips Durations -->
@@ -78,10 +78,10 @@
               <!-- Destination -->
               <div class="btn-group col-auto" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="destinationRadio" id="singleSort" value="single Destination" autocomplete="off">
-                <label class="btn btn-outline-secondary" for="singleSort"><i class="bi bi-sort-down-alt"></i>Single Destination</label>
+                <label class="btn btn-outline-secondary" for="singleSort"><i class="bi bi-flag"></i>Single Destination</label>
 
                 <input type="radio" class="btn-check" name="destinationRadio" id="multiSort" value="Multi Destination" autocomplete="off">
-                <label class="btn btn-outline-secondary" for="multiSort"><i class="bi bi-sort-up-alt"></i>Multi Destinations</label>
+                <label class="btn btn-outline-secondary" for="multiSort"><i class="bi bi-flag-fill"></i>Multi Destinations</label>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
         </div>
           <br>
           <template id="cruiseTemplate">
-          <div class="card mb-3" style="max-width: 85%; max-height: fit-content; margin: auto;">
+          <div class="card mb-3 cruise-card" style="max-width: 85%; max-height: fit-content; margin: auto;">
               <div class="row g-0">
                 <div class="col-md-4">
                     <img src="./assets/luke-mckeown-nlyWZtWTzCo-unsplash.jpg" class="img-fluid rounded-start" alt="...">
@@ -98,13 +98,13 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 card-content" >
                                 <h1 class="card-title" id="nameText">HAWAII</h1>
                                 <p class="card-text" id="descriptionText">Hawaii is a beautiful series of volcanic U.S. islands in the Pacific Ocean. It could be an expensive getaway, but if you experience the wonders of the islands on Hawaiian island cruises, you'll save a ton of money without sacrificing the experience, as your food, lodging, and inter-island transportation are included in one low price with Hawaii cruise deals.</p>
                                 <h2 class="card-text" id="priceText">$626</h2>
                                 <div class="btn-now">BOOK NOW</div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6  card-details">
                                 <h3 class="card-title" id="dateText">8 NIGHTS</h3>
                                 <p class="card-text" id="departText">DEPART FROM VANCOUVER, CANADA 9AM</p>
                                 <p class="card-text" id="destinationText">DESTINATION: HONOLULU, HAWAII 7AM and Mexico</p>
